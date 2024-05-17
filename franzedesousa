@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pessoal</title>
+    <meta name="description" content="Blog pessoal de um jornalista. Notícias, artigos, opiniões e muito mais.">
+    <meta name="keywords" content="jornalista, blog, notícias, artigos, opiniões, fotos, vídeos">
+    <meta name="author" content="Seu Nome">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .section-title {
+            font-family: 'Century Gothic', sans-serif;
+            color: #1e90ff;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Pessoal</h1>
+    <p>Jornalista - Notícias, Artigos, Opiniões e mais</p>
+</header>
+
+<nav>
+    <a href="#noticias">Notícias</a>
+    <a href="#artigos">Artigos</a>
+    <a href="#opiniao">Opiniões</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#sobre-mim">Sobre Mim</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+    <section id="noticias" class="content">
+        <h2 class="section-title">Notícias</h2>
+        <p>Aqui você encontrará as últimas notícias e atualizações.</p>
+        <!-- Adicione conteúdo de notícias aqui -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = 'noticias';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://SEU_SHORTNAME_DISQUS.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Por favor, habilite o JavaScript para visualizar os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários pelo Disqus.</a></noscript>
+    </section>
+
+    <section id="artigos" class="content">
+        <h2 class="section-title">Artigos</h2>
+        <p>Leia os artigos mais recentes escritos por mim.</p>
+        <!-- Adicione conteúdo de artigos aqui -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = 'artigos';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://SEU_SHORTNAME_DISQUS.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Por favor, habilite o JavaScript para visualizar os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários pelo Disqus.</a></noscript>
+    </section>
+
+    <section id="opiniao" class="content">
+        <h2 class="section-title">Opiniões</h2>
+        <p>Confira minhas opiniões sobre diversos temas.</p>
+        <!-- Adicione conteúdo de opiniões aqui -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = 'opiniao';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://SEU_SHORTNAME_DISQUS.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Por favor, habilite o JavaScript para visualizar os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários pelo Disqus.</a></noscript>
+    </section>
+
+    <section id="fotos" class="content">
+        <h2 class="section-title">Fotos</h2>
+        <p>Veja a galeria de imagens.</p>
+        <!-- Adicione galeria de fotos aqui -->
+        <img src="images/foto1.jpg" alt="Descrição da Foto 1">
+        <img src="images/foto2.jpg" alt="Descrição da Foto 2">
+    </section>
+
+    <section id="videos" class="content">
+        <h2 class="section-title">Vídeos</h2>
+        <p>Assista aos vídeos mais recentes.</p>
+        <!-- Adicione vídeos aqui -->
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </section>
+
+    <section id="sobre-mim" class="content">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p>Saiba mais sobre mim e minha trajetória.</p>
+        <!-- Adicione conteúdo sobre você aqui -->
+    </section>
+
+    <section id="contato" class="content">
+        <h2 class="section-title">Contato</h2>
+        <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>Siga-me nas redes sociais:</p>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+    <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+</footer>
+
+<script id="dsq-count-scr" src="//SEU_SHORTNAME_DISQUS.disqus.com/count.js" async></script>
+</body>
+</html>
